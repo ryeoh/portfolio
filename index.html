@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 </head>
 
 <body>
@@ -20,23 +21,28 @@
 
     <main role="main">
         <header class="hero" id="top">
+            <div class="circleImage"><img src="images/blue_coffee.jpg" alt="cup of coffee in blue background"></div>
             <div class="hero-inner">
-                <span class="circleImage"></span>
                 <h1>Rachel Oh</h1>
                 <p>An aspiring fullstack web developer with a fresh humanistic perspective.</p>
-                <button class="navToProjects">My Projects</button>    
             </div>  
+            <a href="#my-projects"></a>
         </header>
 
         <section class="myProjects" id="my-projects">
-            <h2>My Projects</h2>
-            <div class="projectImg"></div>
+            <h2>Projects</h2>
+            <div class="projectImg">
+                <a href="https://ryeoh.github.io/quiz-app-coffee/"><img src="images/Coffee Quiz App.jpeg" alt="screenshot of coffee quiz app"></a>
+            </div>
             <div class="project-one">
-                <h3>Coffee Quiz App</h3>
+                <h3><a href="https://ryeoh.github.io/quiz-app-coffee/">Coffee Quiz App</a></h3>
+                <a href="https://github.com/ryeoh/quiz-app-coffee" target="_blank"><button type="button" class="view-code">View code</button></a>
+                <a href="https://ryeoh.github.io/quiz-app-coffee/" target="_blank">
+                <button type="button" class="view-project">View project</button></a>
                 <ul>
-                    <li><img class="techIcon" src="images/HTML5_Logo.png"></li>
-                    <li><img class="techIcon" src="images/css3-logo.png"></li>
-                    <li><img class="techIcon" src="images/javascript-logo.png"></li>
+                    <li><img class="techIcon" src="images/HTML5_Logo.png" alt="HTML5 logo"></li>
+                    <li><img class="techIcon" src="images/css3-logo.png" alt="CSS3 logo"></li>
+                    <li><img class="techIcon" src="images/javascript-logo.png" alt="Javascript logo"></li>
                 </ul>
                 <p>A Quiz App that will test you on how much you think you know about coffee.</p>
             </div>
@@ -51,14 +57,14 @@
     </main>
 
     <footer role="content-info">
-        <h2>Contact Me</h2>
-        <ul class="contactInfo">
-            <li><a href="mailto:rachelyjo@gmail.com"><img class="contactIcon" src="images/email_icon2.png"></a></li>
+        <h4>Contact Me</h4>
+        <div class="contactInfo">
+            <a href="mailto:rachelyjo@gmail.com"><img class="contactIcon" src="images/email_icon2.png" alt="email icon"></a>
             
-            <li><a href="https://github.com/ryeoh"><img class="contactIcon" src="images/githubicon.png"></a></li>
+            <a href="https://github.com/ryeoh"><img class="contactIcon" src="images/githubicon.png" alt="github logo icon"></a>
            
-            <li><a href="https://www.linkedin.com/in/rachelyjo/"><img class="contactIcon" src="images/linkedin_logo.png"></a></li>
-           </ul>
+            <a href="https://www.linkedin.com/in/rachelyjo/"><img class="contactIcon" src="images/linkedin_logo.png" alt="linkedin logo icon"></a>
+        </div>
     </footer>
 </body>
 </html>
