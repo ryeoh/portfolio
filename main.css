@@ -78,7 +78,7 @@ h3 > a {
 }
 
 h3 > a:hover {
-  color: white;
+  color: #A09382;
 }
 
 h4 {
@@ -138,11 +138,11 @@ li > a {
 }
 
 .icon > a:hover {
-  color: #A39E90;
+  color: #A09382;
 }
 
 li > a:hover {
-  color: #A39E90;
+  color: #A09382;
 }
 
 .hero-inner {
@@ -231,7 +231,7 @@ li > a:hover {
 }
 
 .projectImg:hover {
-  opacity: .5;
+  opacity: .7;
   transition: opacity .3s;
 }
 
@@ -253,11 +253,13 @@ li > a:hover {
 
 .aboutMe > p {
   text-align: left;
-  text-justify: inter-word;
 }
 
 .contactInfo {
   display: flex;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 20px;
   padding-bottom: 25px;
   justify-content: space-evenly;
@@ -357,5 +359,12 @@ li > a:hover {
   .projectInfo > p {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutMe > p {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
