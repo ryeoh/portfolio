@@ -3,7 +3,6 @@
 <head>
     <title>Portfolio: HTML wireframe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -14,36 +13,34 @@
     <nav role="navigation">
         <div class="icon"><a href="#top">RYEOH</a></div>
         <ul class="navbar-options">
-            <li><a href="#my-projects">PROJECTS</a></li>
-            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a class="scroll" href="#my-projects">PROJECTS</a></li>
+            <li><a class="scroll" href="#about-me">ABOUT ME</a></li>
         </ul>
     </nav>
 
     <main role="main">
         <header class="hero" id="top">
-            <div class="circleImage"><img src="images/blue_coffee.jpg" alt="cup of coffee in blue background"></div>
+            <div class="circleImage"></div>
             <div class="hero-inner">
                 <h1>Rachel Oh</h1>
                 <p>An aspiring fullstack web developer with a fresh humanistic perspective.</p>
             </div>  
-            <a href="#my-projects"></a>
+            <a class="scroll" href="#my-projects"></a>
         </header>
 
         <section class="myProjects" id="my-projects">
             <h2>Projects</h2>
-            <div class="projectImg">
-                <a href="https://ryeoh.github.io/quiz-app-coffee/"><img src="images/Coffee Quiz App.jpeg" alt="screenshot of coffee quiz app"></a>
-            </div>
-            <div class="project-one">
+            <div class="projectInfo">
+                <span class="projectImg"></span>
                 <h3><a href="https://ryeoh.github.io/quiz-app-coffee/">Coffee Quiz App</a></h3>
-                <a href="https://github.com/ryeoh/quiz-app-coffee" target="_blank"><button type="button" class="view-code">View code</button></a>
-                <a href="https://ryeoh.github.io/quiz-app-coffee/" target="_blank">
-                <button type="button" class="view-project">View project</button></a>
                 <ul>
                     <li><img class="techIcon" src="images/HTML5_Logo.png" alt="HTML5 logo"></li>
                     <li><img class="techIcon" src="images/css3-logo.png" alt="CSS3 logo"></li>
                     <li><img class="techIcon" src="images/javascript-logo.png" alt="Javascript logo"></li>
-                </ul>
+                </ul> <br>
+                <a href="https://github.com/ryeoh/quiz-app-coffee" target="_blank"><button type="button" class="view-code">View code</button></a>
+                <a href="https://ryeoh.github.io/quiz-app-coffee/" target="_blank">
+                <button type="button" class="view-project">View project</button></a>
                 <p>A Quiz App that will test you on how much you think you know about coffee.</p>
             </div>
         </section>
@@ -56,15 +53,18 @@
             </section>
     </main>
 
-    <footer role="content-info">
-        <h4>Contact Me</h4>
+    <footer role="contactInfo">
+        <h2>Contact Me</h2>
         <div class="contactInfo">
             <a href="mailto:rachelyjo@gmail.com"><img class="contactIcon" src="images/email_icon2.png" alt="email icon"></a>
             
-            <a href="https://github.com/ryeoh"><img class="contactIcon" src="images/githubicon.png" alt="github logo icon"></a>
+            <a href="https://github.com/ryeoh"><img class="contactIcon" src="images/github-icon.png" alt="github logo icon"></a>
            
-            <a href="https://www.linkedin.com/in/rachelyjo/"><img class="contactIcon" src="images/linkedin_logo.png" alt="linkedin logo icon"></a>
+            <a href="https://www.linkedin.com/in/rachelyjo/"><img class="contactIcon" src="images/linkedin-logo.png" alt="linkedin logo icon"></a>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/Users/racheloh/Desktop/projects/portfolio-wireframe/index.js"></script>
 </body>
 </html>
