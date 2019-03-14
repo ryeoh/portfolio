@@ -230,11 +230,6 @@ li > a:hover {
   background-position: top center;
 }
 
-.projectImg:hover {
-  opacity: .7;
-  transition: opacity .3s;
-}
-
 .techIcon {
   height: 30px;
   width: auto;
