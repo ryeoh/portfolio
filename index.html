@@ -12,7 +12,9 @@
 
 <body>
     <nav role="navigation">
-        <div class="icon"><a href="#top">RYEOH</a></div>
+        <div class="icon">
+            <a class="scroll" href="#top">RYEOH</a>
+        </div>
         <ul class="navbar-options">
             <li><a class="scroll" href="#my-projects">PROJECTS</a></li>
             <li><a class="scroll" href="#my-skills">SKILLS</a></li>
@@ -82,21 +84,23 @@
 
         <section class="skills" id="my-skills">
             <h2>Skills and Technologies</h2>
-            <div class="frontEnd">
-                <i class="fas fa-desktop"></i>
-                <h3>Front-End</h3>
-                <p>JavaScript, jQuery, HTML/CSS</p>
+            <div class="skillsDisplay">
+                <div class="frontEnd">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Front-End</h3>
+                    <p>JavaScript, jQuery, HTML/CSS</p>
+                </div>
+                <div class="inProgress">
+                    <i class="fas fa-plus"></i>
+                    <h3>Currently Learning</h3>
+                    <p>React, Node</p>
+                </div>
+                <!-- <span class="icon fa-toolbox">
+                        <i class="fas fa-toolbox"></i>
+                        <h3>Tools/Technologies</h3>
+                        <p>Git/GitHub, Chrome DevTools</p>
+                    </span> -->
             </div>
-            <div class="inProgress">
-                <i class="fas fa-plus"></i>
-                <h3>Currently Learning</h3>
-                <p>React, Node</p>
-            </div>
-            <!-- <span class="icon fa-toolbox">
-                    <i class="fas fa-toolbox"></i>
-                    <h3>Tools/Technologies</h3>
-                    <p>Git/GitHub, Chrome DevTools</p>
-                </span> -->
         </section>
 
         <section class="aboutMe" id="about-me">
@@ -106,18 +110,29 @@
 
                 <br> With my diverse background in sociology, communications, facilitating meetings and working with multiple teams, I offer flexibility and the ability to be able to learn quickly, adapt to needs and different teams, and a fresh perspective to meet whatever challenges come my way. <br>
 
-                <br> When I'm not coding, I can be seen curling up with a good book, drinking some good coffee at a local cafe, or exploring the great outdoors with my husband, Daniel. </p>
+                <br> When I'm not coding, I can be seen curling up with a good book, drinking some good coffee at a local cafe, or exploring the great outdoors with my husband, Daniel (picture above). </p>
         </section>
     </main>
 
     <footer role="footer">
-        <h2>Connect with me!</h2>
+        <h2>Get connected</h2>
         <div class="contactInfo">
-            <a href="mailto:rachelyjo@gmail.com"><img class="contactIcon" src="images/email_icon2.png" alt="email icon"></a>
+            <a href="mailto:rachelyjo@gmail.com">
+                <i class="fas fa-envelope-square"></i>
+                <span>Email me</span>
+            </a>
+            <br>
+                
+            <a href="https://github.com/ryeoh">
+                <i class="fab fa-github-square"></i>
+                <span>Check out my GitHub</span>
+            </a>
+            <br>
             
-            <a href="https://github.com/ryeoh"><img class="contactIcon" src="images/github-icon.png" alt="github logo icon"></a>
-           
-            <a href="https://www.linkedin.com/in/rachelyjo/"><img class="contactIcon" src="images/linkedin-logo.png" alt="linkedin logo icon"></a>
+            <a href="https://www.linkedin.com/in/rachelyjo/">
+                <i class="fab fa-linkedin"></i>
+                <span>Find me on LinkedIn</span>
+            </a>
         </div>
     </footer>
 

@@ -246,7 +246,7 @@ li > a:hover {
   font-family: 'Montserrat';
 }
 
-.skills > div {
+.skillsDisplay > div {
   width: 50%;
   background-color: #F5F4F0;
   margin-left: auto;
@@ -258,10 +258,13 @@ li > a:hover {
 }
 
 .frontEnd > h3, .inProgress > h3 {
+  display: block;
   font-size: 16px;
+  line-height: inherit;
 }
 
 .frontEnd > p, .inProgress > p {
+  font-size: 16px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -279,18 +282,25 @@ li > a:hover {
 }
 
 .contactInfo {
-  display: flex;
+  display: block;
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
+  margin-left: 30%;
+  text-align: left;
+  /* margin-right: auto; */
   padding-bottom: 25px;
-  justify-content: space-evenly;
 }
 
-.contactIcon {
-  height: 40px;
-  width: auto;
+.contactInfo > a {
+  text-decoration: none;
+}
+
+a > span {
+  color: whitesmoke;
+}
+
+a > svg {
+  color: whitesmoke;
+  height: 10%;
 }
 
 @media screen and (min-width: 500px) {
@@ -323,6 +333,13 @@ li > a:hover {
   }
   .projectImg {
     height: 430px;
+  }
+  .skillsDisplay {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .skillsDisplay > div {
+    width: 30%;
   }
 }
 
@@ -383,6 +400,21 @@ li > a:hover {
   .projectInfo > p {
     padding-left: 0;
     padding-right: 0;
+  }
+  .skillsDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .skillsDisplay > div {
+    width: 40%;
+    padding: 40px;
+  }
+  .frontEnd > h3, .inProgress > h3 {
+    font-size: 20px;
+  }
+  .frontEnd > p, .inProgress > p {
+    font-size: 20px;
   }
 }
 
