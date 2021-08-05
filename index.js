@@ -4,7 +4,7 @@ function scrollPage() {
     $('.scroll').on('click', function(event) {
         event.preventDefault();
         $('body, html').animate({
-         scrollTop: $(this.hash).offset().top - 20}, 1500)
+         scrollTop: $(this.hash).offset().top - 20}, 1000)
     });
 };
 
